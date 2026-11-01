@@ -1,0 +1,18 @@
+name: PotionGuard
+version: '${project.version}'
+main: com.example.potionguard.PotionGuard
+api-version: '1.21'
+description: Ban or weaken potion effects, with an in-game config menu.
+commands:
+  potionguard:
+    description: Ban or weaken potion effects
+    usage: /<command> <config|ban|allow|limit|list|reload>
+    aliases: [pg, potionrules]
+    permission: potionguard.admin
+permissions:
+  potionguard.admin:
+    description: Open the config menu and change the potion rules
+    default: op
+  potionguard.bypass:
+    description: Not affected by the potion rules (banned effects work normally)
+    default: false
