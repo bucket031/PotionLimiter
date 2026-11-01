@@ -1,0 +1,18 @@
+# PotionGuard config.
+# It is easiest to change things in-game with /potionguard config.
+# The "effects" section is created automatically as you change effects.
+# Which kinds of potions the rules apply to.
+apply_to:
+  drinking: true       # potions that are drunk
+  splashed: true       # splash potions
+  lingering: true      # lingering potion clouds
+  arrows: true         # tipped arrows
+# Example of what gets saved when you change an effect:
+#
+# effects:
+#   strength:
+#     mode: LIMITED          # ALLOWED, LIMITED or BANNED
+#     max_level: 1           # highest level it can be (1 = level I)
+#     duration_percent: 50   # how much of the normal duration is kept (0 - 100)
+#   instant_damage:
+#     mode: BANNED
